@@ -9,4 +9,4 @@ According to UCAS course:Intelligent Computing Systems
 <img src = 'examples/content/stata.jpg' height = '246px'>
 <a href = 'examples/results/stata_udnie.jpg'><img src = 'examples/results/stata_udnie_header.jpg' width = '627px'></a>
 </p>
-refer to [layers_1](https://github.com/up-or-down/Image_Style_Transfer/blob/main/layers_1.py)
+refer to [layers1](https://github.com/up-or-down/Image_Style_Transfer/blob/main/layers_1.py)
