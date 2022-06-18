@@ -12,8 +12,12 @@ According to UCAS course:Intelligent Computing Systems
 ### forward
 $$ \boldsymbol{y}=\boldsymbol{W}^{T}\boldsymbol{x}+\boldsymbol{b} $$
 ### backward
+Define $\nabla_\boldsymbol{y} L $ as partial derivative of Loss function  $L$ to  $y$ 
+
 $$ \nabla_\boldsymbol{W} L=x\nabla_\boldsymbol{y} L^T $$
+
 $$ \nabla_\boldsymbol{b} L=\nabla_\boldsymbol{y} L $$
+
 $$ \nabla_\boldsymbol{x} L=\boldsymbol{W}^T\nabla_\boldsymbol{y} L $$
 
 ## ReLULayer：
