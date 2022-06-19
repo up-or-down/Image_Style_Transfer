@@ -2,7 +2,7 @@
 realize image style transfer using basic components of neural network 
 According to UCAS course:Intelligent Computing Systems 
 
-# Basic NN Components
+# Basic NN Components [layers1](https://github.com/up-or-down/Image_Style_Transfer/blob/main/layers_1.py)
 ## FullyConnectedLayer：
 
 <p align = 'center'>
@@ -28,6 +28,5 @@ $$ \nabla_\boldsymbol{x} L=\boldsymbol{W}^T\nabla_\boldsymbol{y} L $$
 ## SoftmaxLossLayer：
 
 
-refer to [layers1](https://github.com/up-or-down/Image_Style_Transfer/blob/main/layers_1.py)
 
 2、
