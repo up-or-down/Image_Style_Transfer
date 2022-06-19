@@ -16,8 +16,6 @@ class FullyConnectedLayer(object):
         start_time = time.time()
         self.input = input
         # TODO：全连接层的前向传播，计算输出结果
-        """ y = X * W + b """
-        #self.output = np.matmul(self.input, self.weight) + self.bias
         self.output = self.input.dot(self.weight) + self.bias
         return self.output
     def backward(self, top_diff):  # 反向传播的计算
@@ -28,7 +26,6 @@ class FullyConnectedLayer(object):
         return bottom_diff
     def update_param(self, lr):  # 参数更新
         # TODO：对全连接层参数利用参数进行更新
-        #print str(self.d_weight) + " " + str(self.d_bias)
         self.weight = self.weight - lr * self.d_weight
         self.bias = self.bias - lr * self.d_bias
     def load_param(self, weight, bias):  # 参数加载
