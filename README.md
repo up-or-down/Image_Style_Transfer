@@ -25,7 +25,8 @@ and $\boldsymbol{y}\in{\mathbb{R}^n}$
 is the output of fully connected layer.
 
 ### backward:
-Define $\nabla_{\boldsymbol{y}} L $ as partial derivative of Loss function  $L$
+Define $\nabla_{\boldsymbol{y}} L $
+as partial derivative of Loss function  $L$
 to   ${\boldsymbol{y}}$ ("top_diff" in layers_1.py) 
 
 $$ \nabla_{\boldsymbol{W}} L=x\nabla_{\boldsymbol{y}} L^T $$
@@ -43,6 +44,7 @@ $$ \boldsymbol{b}=\boldsymbol{b}-\eta\nabla_{\boldsymbol{b}} L $$
 ## ReLULayer：
 ### forward:
 $$ \boldsymbol{y}(i)=\max{(0,\boldsymbol{x}(i))} $$
+
 where $\boldsymbol{x}\in\mathbb{R}^{n}$ is the input of ReLU Layer,$\boldsymbol{y}\in\mathbb{R}^{n}$ is the output.
 
 ### backward:
@@ -73,9 +75,11 @@ where  $\boldsymbol{y}(i)$  is the position
 $i$ of label vector $\boldsymbol{y}$.
 
 Considering batch processing:
+
 $$ L = -\frac{1}{p}\sum\limits_{i,j}\boldsymbol{Y}(i,j)\ln\boldsymbol{\hat{Y}}(i,j)$$
-where $\boldsymbol{Y}(i,j)$ is the position 
-$(i,j)$ 
+
+where $\boldsymbol{Y}(i,j)$
+is the position $(i,j)$ 
 of label matrix $\boldsymbol{Y}\in{\mathbb{R}^{p\times{n}}}$
 ,every row vector of $\boldsymbol{\hat{Y}}\in{\mathbb{R}^{p\times{n}}}$ corresponds to output of one sample in softmax layer. 
 $$\boldsymbol{\hat{Y}}(i,j)=\frac{e^{\boldsymbol{X}(i,j)-\max\limits_{n}\boldsymbol{X}(i,n)}}{\sum\limits_{l}{e^{\boldsymbol{X}(l,j)-\max\limits_{n}\boldsymbol{X}(l,n)}}}$$
